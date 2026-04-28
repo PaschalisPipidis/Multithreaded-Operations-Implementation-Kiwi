@@ -1,15 +1,15 @@
-# Multithreaded Opperations Implementation for Kiwi
+# Multithreaded Operations Implementation for Kiwi
 
-A modification of the **Kiwi** storage engine that provides multithreaded opperation capabilities, implemented in C as part of the "Operating Systems" course at the University of Ioannina, Department of Computer Science and Engineering in collaboration with C. G. Mousses.
+A modification of the **Kiwi** storage engine that provides multithreaded operation capabilities, implemented in C as part of the "Operating Systems" course at the University of Ioannina, Department of Computer Science and Engineering in collaboration with C. G. Mousses.
 
 ## About the Kiwi storage engine
 
-The **Kiwi** storage engine is based on a log-structured merge tree (LSM-tree).
+The **Kiwi** storage engine is based on a log-structured merge tree (LSM tree).
 Storage engines are a critical component of modern cloud infrastructures,
 as they are responsible for storing and retrieving data on a machine’s local devices.
 A distributed storage system uses thousands of such machines to achieve scalable and reliable operation.
 
-The LSM-tree is the data structure on which storage machines are often based.
+The LSM tree is the data structure on which storage machines are often based.
 The provided programming interface (API) includes put and get operations for key-value pairs.
 The put function takes as a parameter a key-value pair that must be added to the structure.
 The get function accepts a key as a parameter and retrieves the corresponding value if a key-value pair with that
